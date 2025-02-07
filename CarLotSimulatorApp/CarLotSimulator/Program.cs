@@ -22,25 +22,25 @@ namespace CarLotSimulator
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
-            var carOne = new Car();
+            var CarOne = new Car();
 
-            carOne.Make = "Ford";
+            CarOne.Make = "Ford";
 
-            carOne.Model = "Mustang";
+            CarOne.Model = "Mustang";
 
-            carOne.Year = 2016;
+            CarOne.Year = 2016;
 
-            carOne.isDriveable = true;
+            CarOne.isDriveable = true;
 
-            carOne.MakeEngineNoise("vroom vroom");
+            CarOne.MakeEngineNoise("vroom vroom");
 
-            carOne.MakeHonkNoise("beep beep");
+            CarOne.MakeHonkNoise("beep beep");
 
-            CarLotOne.ParkingLot.Add(carOne);
+            CarLotOne.ParkingLot.Add(CarOne);
 
 
 
-            var carTwo = new Car()
+            var CarTwo = new Car()
             {
                 Make = "Toyota",
                 Model = "Tundra",
@@ -48,16 +48,16 @@ namespace CarLotSimulator
                 isDriveable = false
             };
 
-            carTwo.MakeEngineNoise("Roar");
-            carTwo.MakeHonkNoise("a Loud horn");
-            CarLotOne.ParkingLot.Add(carTwo);
+            CarTwo.MakeEngineNoise("Roar");
+            CarTwo.MakeHonkNoise("a Loud horn");
+            CarLotOne.ParkingLot.Add(CarTwo);
 
 
-            var carThree = new Car("Ferrari", "Spider", 2025, true);
+            var CarThree = new Car("Ferrari", "Spider", 2025, true);
 
-            carThree.MakeEngineNoise("purr");
-            carThree.MakeHonkNoise("beep");
-            CarLotOne.ParkingLot.Add(carThree);
+            CarThree.MakeEngineNoise("purr");
+            CarThree.MakeHonkNoise("beep");
+            CarLotOne.ParkingLot.Add(CarThree);
 
 
             CarLotOne.CheckCars();
